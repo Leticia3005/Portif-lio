@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK DO ÍCONE-->
+     <link rel="icon" href="caminho/para/seu/favicon.ico" type="image/x-icon">
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!--LINK DO CSS EXTERNO-->
+    <link rel="stylesheet" href="assets/style.css">
+    <!--LINK DO FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portifólio</title>
+</head>
+<body>
+    <!--INICIO HEADER-->
+    <header id="header" class="container-fluid px-3 px-md-5 bg-dark"><!--a classe d-flex significa display-flex, faz com que o container fique flexível e os elementos dentro dele passam a ficarem organizados em uma linha | a classe align-items-center centraliza o conteúdo-->
+        <!--INICIO NAV-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark d-flex align-items-center"><!--a classe navbar-expand-lg faz com que os links da barra de navegação apareçam | bg-body-tertiary faz com que o elemento fique com uma cor cinza claro-->
+            <div id="logo" class="container-fluid">
+                <!--IMAGEM NAVBAR-->
+                <a href="index.html" class="text-decoration-none text-white">
+                    <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                    <!--<img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top ">-->
+                Meu Portifólio</a>
+
+            <!-- BOTÃO HAMBURGUER (MENU RESPONSIVO) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--MENU-->
+            <div id="menu" class="collapse navbar-collapse">
+                <!--LINK PARA O INÍCIO-->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item me-3 ms-24">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                <!--LINK PARA SOBRE MIM-->
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="sobre_mim.html">Sobre mim</a>
+                    </li>
+                <!--LINK PARA SOBRE MIM-->
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+                    </li>
+                     <!--<li class="nav-item d-flex gap-3 mt-2">
+                        <a href=" https://www.linkedin.com/in/let%C3%ADcia-freitas-2b7ba02b1/" target="_blank"><i class="fa-brands fa-square-linkedin fa-lg"></i></a>
+                        <a href="https://github.com/Leticia3005" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                    </li>-->
+                </ul>
+                <!--LINKEDIN E GITHUB-->
+                <!--<ul class="list-unstyled d-flex gap-3"> a classe list-unstyled: tira o estilo padrão da lista | d-flex: deixa os itens lado a lado | gap-3: adiciona um espaçamento entre os ícones-->
+                    
+                </ul>
+            </div>
+        <!--FIM NAV-->
+        </nav>
+    <!--FIM HEADER-->
+    </header>
+    
+    <main class="container my-5">
+    <div class="d-flex justify-content-center">
+        <div class="row w-100 text-center align-items-stretch g-4" style="max-width: 1100px;">
+            <!-- CARD DE CONTATO -->
+            <div class="col-12 col-md-6">
+                <div id="contact" class="p-4 h-100">
+                    <h3 class="mt-4">Entre em contato</h3>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ratione?</p>
+                    <div class="list-group mt-5">
+                        <a href="#" target="_blank" class="list-group-item list-group-item-action">leticiafreitas3005@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/let%C3%ADcia-freitas-2b7ba02b1/" target="_blank" class="list-group-item list-group-item-action"><i class="fa-brands fa-square-linkedin"></i></a>
+                        <a href="https://github.com/Leticia3005" target="_blank" class="list-group-item list-group-item-action"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div class="col-12 col-md-6">
+                <form id="form" class="p-4 h-100">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputMessage" class="form-label">Mensagem</label>
+                    <input type="text" class="form-control" id="exampleInputMessage">
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="container-fluid py-4 text-center bg-dark text-white">
+        <p class="mb-0">&copy; 2025 Letícia Freitas. Todos os direitos reservados.</p>
+    </footer><!--EXPLICAÇÃO-->
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

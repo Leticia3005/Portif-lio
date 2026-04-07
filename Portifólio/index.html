@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK DO ÍCONE-->
+     <link rel="icon" href="caminho/para/seu/favicon.ico" type="image/x-icon">
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!--LINK DO CSS EXTERNO-->
+    <link rel="stylesheet" href="assets/style.css">
+    <!--LINK DO FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="form.js" defer></script>
+    <title>Portifólio</title>
+</head>
+<body>
+    <!--INICIO HEADER-->
+    <header id="header" class="container-fluid px-3 px-md-5 bg-dark"><!--a classe d-flex significa display-flex, faz com que o container fique flexível e os elementos dentro dele passam a ficarem organizados em uma linha | a classe align-items-center centraliza o conteúdo--><!--COLOCAR DEPOIS d-flex align-items-center-->
+        <!--INICIO NAV-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark d-flex align-items-center"><!--a classe navbar-expand-lg faz com que os links da barra de navegação apareçam | bg-body-tertiary faz com que o elemento fique com uma cor cinza claro-->
+            <div id="logo" class="container-fluid">
+                <!--IMAGEM NAVBAR-->
+                <a href="index.html" class="text-decoration-none text-white" style="margin-left: 2rem;">
+                    <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                    <!--<img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top ">-->
+                Meu Portifólio</a>
+
+            <!-- BOTÃO HAMBURGUER (MENU RESPONSIVO) -->
+            <button class="navbar-toggler ms-md-5 ms-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--MENU-->
+            <div id="menu" class="collapse navbar-collapse">
+                <!--LINK PARA O INÍCIO-->
+                <ul class="navbar-nav mx-auto gap-5">
+                    <li class="nav-item me-3 ms-24">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                <!--LINK PARA SOBRE MIM-->
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="sobre_mim.html">Sobre mim</a>
+                    </li>
+                <!--LINK PARA SOBRE MIM-->
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+                    </li>
+                     <!--<li class="nav-item d-flex gap-3 mt-2">
+                        <a href=" https://www.linkedin.com/in/let%C3%ADcia-freitas-2b7ba02b1/" target="_blank"><i class="fa-brands fa-square-linkedin fa-lg"></i></a>
+                        <a href="https://github.com/Leticia3005" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                    </li>-->
+                </ul>
+                <!--LINKEDIN E GITHUB-->
+                <!--<ul class="list-unstyled d-flex gap-3"> a classe list-unstyled: tira o estilo padrão da lista | d-flex: deixa os itens lado a lado | gap-3: adiciona um espaçamento entre os ícones-->
+                    
+                </ul>
+            </div>
+        <!--FIM NAV-->
+        </nav>
+    <!--FIM HEADER-->
+    </header>
+    <!--INICIO MAIN-->
+    <main id="main" class="conatiner my-5"><!--COLOCAR DEPOIS mt-5-->
+        <section id="section_home d-flex align-items-center">
+            <div class="container text-center">
+            <div class="row row-cols-2 align-items-center"><!--a class align-items-center faz com que o texto e a imagem fique alinhados no meio horizontalmente entre si-->
+                <div class="col">
+                    <h2 class="title">Olá, eu sou a Letícia Freitas!</h2>
+                    <br>
+                    <h4 class="text_profile">Sou estudante de Ciência da Computação e estou construindo minha trajetória na área da tecnologia. Tenho interesse em compreender como a computação pode ser aplicada no desenvolvimento de soluções inovadoras e eficientes. Este portfólio tem como objetivo apresentar um pouco sobre mim.</h4>
+                </div>
+                <div class="col">
+                    <img src="assets/img/estudando.jpg" class="img-fluid rounded-circle" id="profile_picture" alt="..."><!--a classe img-fluid deixa a imagem capaz de se adaptar ao tamanho da tela | a classe rounded-circle cria um border-radius de 50% na imagem-->
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!--FIM MAIN-->
+    <footer class="container-fluid py-4 text-center bg-dark text-white">
+        <p class="mb-0">&copy; 2025 Letícia Freitas. Todos os direitos reservados.</p>
+    </footer><!--EXPLICAÇÃO-->
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

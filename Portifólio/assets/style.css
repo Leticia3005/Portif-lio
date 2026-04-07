@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  /*o body ocupa toda a altura da tela, o display:flex transforma o body em um container flexível, o que permite que o body seja organizado de forma flexível e responsiva e o display está organizado em colunas*/
+}
+
+:root{
+  /* Paleta principal (tons combinados) */
+  --purple-700: #7C3AED;  /* roxo vibrante principal */
+  --purple-600: #8B5CF6;  /* lavanda suave / transição */
+  --indigo-500:  #6366F1; /* azul arroxeado - profundidade */
+  --lavender-300: #C084FC;/* lilás claro - luz/realce */
+
+  --coral: #ec5960;
+  --rosa: #ff5978;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --text-white: #fffafa;
+}
+
+#header{
+    background: linear-gradient(135deg,rgba(124, 58, 237, 1) 12%, rgba(139, 92, 246, 1) 36%, rgba(99, 102, 241, 1) 64%, rgba(192, 132, 252, 1) 91%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*border: 2px solid #ff1457;*/
+    transition: all 0.4s ease;
+    padding-top: 2rem;
+    overflow: visible; /* evita que o conteúdo "vaze" ao expandir */
+}
+
+.navbar-collapse.show{
+    padding-bottom: 1rem;
+}
+
+#nav{
+    background: transparent;
+    height: 40%;
+    justify-content: space-between;
+}
+
+/*ESTILO DA FOTO DO PERFIL NO INDEX.HTML*/
+#profile_picture{
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
+}
+
+.nav-item{
+    transition: all 0.3s ease; /*cria uma animação leve*/
+}
+
+
+#section_about_me{
+    min-height: 100vh;
+}
+
+.text_profile{
+    font-weight: var(--font-regular);
+}
+
+#menu ul{
+    font-weight: var(--font-medium);
+}
+
+/*a:hover{
+    background: linear-gradient(135deg, #ff5978, #ff5978, #ff0f95);
+    border-radius: 10px;
+     transition: background-color 0.3s ease, color 0.3s ease; 
+}*/
+
+/*LINKS DA BARRA DE NAVEGAÇÃO*/
+.nav-link {
+  color: var(--text-color, #fff);
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 12px; /*arredonda*/
+  transition: all 0.3s ease; /*animação suave*/
+}
+
+/*HOVER COM GRADIENTE DOS LINKS DABARRA DE NAVEGAÇÃO*/
+.nav-link:hover {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff9770);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 149, 0.4);
+  transform: translateY(-2px); /*faz "levantar" ao passar o mouse*/
+}
+
+#bottom_div{
+  justify-content: space-around;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 1) 12%, rgba(139, 92, 246, 1) 36%, rgba(99, 102, 241, 1) 64%, rgba(192, 132, 252, 1) 91%);
+  padding: 2rem 0; 
+}
+
+.card{
+  box-shadow: 0 0 10px rgba(255, 0, 149, 0.4);
+  transition: all 0.3s ease; /*animação leve*/
+}
+
+.card:hover{
+  transform: translateY(-2px); /*faz "levantar" ao passar o mouse*/
+}
+
+/*FORMULÁRIO*/
+#contact, #form{
+  box-shadow: 0 0 10px rgba(255, 0, 149, 0.4);
+  border-radius: 1rem;
+  height: 100%;
+  transition: all 0.3s ease; /*animação suave*/
+}
+
+#contact, #form:hover{
+  transform: translateY(-2px); /*faz "levantar" ao passar o mouse*/
+}
+
+/*RESPONSIVIDADE*/
+/*991: telas medianas*/
+
+/**/
+@media (max-width: 991px) {
+  #menu {
+    background: transparent;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  /*assim que o menu for aberto, o header vai aumentar de tamanho*/
+  #header.expanded {
+    height: 100vh; /*o header ocupa a altura da tela inteira*/
+    align-items: flex-start; /*alinha o conteúdo no topo do site*/
+    padding-top: 1rem;
+  }
+
+  /*links dentro da barra de navegação*/
+  #menu .nav-link {
+    color: #fff;
+    padding: 0.75rem 0;
+    font-size: 1.2rem;
+  }
+
+}
+
+#contact:hover, #form:hover {
+  transform: translateY(-2px);
+}
+
+footer{
+    background: linear-gradient(135deg, rgba(124, 58, 237, 1) 12%, rgba(139, 92, 246, 1) 36%, rgba(99, 102, 241, 1) 64%, rgba(192, 132, 252, 1) 91%);
+    height: auto; /*height:auto faz com que o footer a altura do footer se ajuste automaticamente de acordo com o conteúdo que está dentro dele*/
+}
+
+* {
+  outline: 1px solid red;
+}
+
+main {
+  flex: 1; /* cresce para preencher o espaço restante */
+}
